@@ -1,0 +1,55 @@
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.res{
+    width: 50%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.checks {
+    display: flex;
+   gap: 2rem;
+}
+
+.length {
+    width: 100%
+}
+
+.length input {
+    width: 100%;
+}
+
+.display {
+    display: flex;
+    border: 100px;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2px;
+}
+.display p{
+    padding: 10px;
+    color: black;
+    border: none;
+}
+.checks label{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.checks div{
+    display: flex;
+    gap: 10px;
+}
+
+
+.range {
+    width: 100%;
+}
