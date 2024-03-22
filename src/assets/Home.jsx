@@ -45,7 +45,7 @@ const Home = () => {
     return (
         <>
             <main>
-            
+
                 <div className='res'>
                     <div className="display">
                         <p>
@@ -58,7 +58,10 @@ const Home = () => {
                     <div className='length'>
                         <label className='range' htmlFor="" >Length</label>
                         <input ref={sliderref} type="range" name="" id="" min={8} max={32} onChange={() => {
-                            slider();
+
+                            (upperref.current.checked || lowerref.current.checked || numref.current.checked || charref.current.checked) ? slider() : alert('Check one CheckBox')
+
+                                // slider();
                         }} />
                     </div>
                 </div>
