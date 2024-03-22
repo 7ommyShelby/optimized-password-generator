@@ -45,6 +45,7 @@ const Home = () => {
     return (
         <>
             <main>
+            <h1>Safe Password Generator</h1>
 
                 <div className='res'>
                     <div className="display">
@@ -56,7 +57,7 @@ const Home = () => {
                         }}>COPY</button>
                     </div>
                     <div className='length'>
-                        <label className='range' htmlFor="" >Length</label>
+                        <label className='range' htmlFor="" >{sliderref.current.value}</label>
                         <input ref={sliderref} type="range" name="" id="" min={8} max={32} onChange={() => {
 
                             (upperref.current.checked || lowerref.current.checked || numref.current.checked || charref.current.checked) ? slider() : alert('Check one CheckBox')
