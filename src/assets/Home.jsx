@@ -61,7 +61,7 @@ const Home = () => {
 
                             (upperref.current.checked || lowerref.current.checked || numref.current.checked || charref.current.checked) ? slider() : alert('Check one CheckBox')
 
-                                // slider();
+                            // slider();
                         }} />
                     </div>
                 </div>
@@ -85,6 +85,9 @@ const Home = () => {
                     </div>
 
                 </div>
+                <button onClick={() => {
+                    (upperref.current.checked || lowerref.current.checked || numref.current.checked || charref.current.checked) ? slider() : alert('Check one CheckBox')
+                }}>Generate</button>
             </main>
         </>
     )
